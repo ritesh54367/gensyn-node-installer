@@ -39,7 +39,7 @@ Step 2: Make the script executable
 
 Make the installation script executable:
 
-chmod +x gensyn_easy.sh
+`chmod +x gensyn_easy.sh`
 
 Step 3: Run the installer script
 
