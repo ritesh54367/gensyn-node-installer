@@ -1,4 +1,4 @@
-Gensyn AI Node - Easy Installer
+# Gensyn AI Node - Easy Installer
 
 This repository provides an easy-to-use installation script for setting up a Gensyn AI node. It automates the process of setting up the environment, installing necessary dependencies, and running the RL Swarm node. This setup is intended for users who are new to running Gensyn nodes and want a beginner-friendly installation method.
 
@@ -14,7 +14,7 @@ This repository provides an easy-to-use installation script for setting up a Gen
 ## Requirements
 
 - **Linux** (Ubuntu-based distributions are recommended)
-- **Minimum 16GB RAM** (more is recommended for larger models)
+- **Minimum 16GB RAM** (recommended for larger models)
 - **Python 3.10+**
 - **A working Cloudflare account** for tunnel authentication
 
@@ -28,26 +28,17 @@ This repository provides an easy-to-use installation script for setting up a Gen
 
 ## Installation
 
-### Step 1: Clone this repository
-Clone this repository to your server or local machine.
+### Step 1: Download and run the script
+To install and run the Gensyn node, use the following command:
 
 ```bash
-git clone https://github.com/yourusername/gensyn-node-installer.git
-cd gensyn-node-installer
+bash <(curl -s https://raw.githubusercontent.com/ritesh54367/gensyn-node-installer/main/gensyn_easy.sh)
 
-Step 2: Make the script executable
+This command will automatically download the script and begin the installation process.
 
-Make the installation script executable:
+Step 2: Follow the interactive prompts
 
-`chmod +x gensyn_easy.sh`
-
-Step 3: Run the installer script
-
-Run the script with sudo to install all dependencies and start the Gensyn node.
-
-sudo ./gensyn_easy.sh
-
-The script will walk you through the following steps:
+The script will ask the following:
 
 1. Join the Testnet: Type Y to participate in the Testnet.
 
@@ -70,7 +61,7 @@ Type 0.5, 1.5, 7, 32, or 72 to choose the model parameter size.
 
 
 
-Step 4: Access your node
+Step 3: Access your node
 
 Once the installation is complete, you can enter the screen session to interact with your node:
 
@@ -78,7 +69,7 @@ screen -r gensyn_node
 
 This will show you the interactive prompts where you can manage your node. A browser link will appear that you need to open in your browser and log in using your Gmail and OTP for Cloudflare tunnel access.
 
-Step 5: Cloudflare Tunnel
+Step 4: Cloudflare Tunnel
 
 The Cloudflare tunnel will be started automatically, and a link will be displayed for you to log in with your Gmail OTP.
 
@@ -103,3 +94,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 Thank you for using the Gensyn AI Node Installer!
+
+### 3. **Share the Command**
+
+Share the following installation command with your users, and they can run it directly on their machines:
+
+```bash
+bash <(curl -s https://raw.githubusercontent.com/ritesh54367/gensyn-node-installer/main/gensyn_easy.sh)
+
+This will make the installation process seamless for everyone.
